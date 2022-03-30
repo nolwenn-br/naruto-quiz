@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="UTF-8" lang="FR">
-	
+
 	<title>Naruto Quiz - Vos résultats</title>
 
     <!-- BOOTSTRAP CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
 </head>
 
 <body class="px-5 mx-2">
@@ -51,16 +50,17 @@
                 ?>
                 <!-- RESULT -->
                 <div class="text-center">
-                    <h4 class="text-center"><?= $result; ?> sur 5</h4>
+                    <h4 class="text-center pb-3 fw-bold"><?= $result; ?> sur 5</h4>
                 <?php 
 
                 // Personalized sentences according to the user's final result
-                if ($result === 0 || $result === 1) { echo "<h4>On peut pas dire que Naruto soit ta grande passion...</h4>"; }
-                if ($result === 2 || $result === 3) { echo "<h4>Peut mieux faire...</h4>"; }
-                if ($result === 4 || $result === 5) { echo "<h4>Joli !</h4>"; }
+                if ($result === 0 || $result === 1) { echo "<h4>On peut pas dire que Naruto soit ta grande passion...</h4>" . "<img src=" . '"' . 'https://c.tenor.com/SNHcVikFJqcAAAAM/naruto-sad.gif' . '"' . '>'; }
+                if ($result === 2 || $result === 3) { echo "<h4>Peut mieux faire...</h4>" . "<img src=" . '"' . 'https://i.pinimg.com/originals/72/c8/40/72c840e2180fd0f8c8ab490f4c105fbd.gif' . '"' . '>'; }
+                if ($result === 4) { echo "<h4>Joli !</h4>" . "<img src=" . '"' . 'http://ekladata.com/Ce_mHg-BZOGk3cDv767R_ttdlK8.gif' . '"' . '>'; }
+                if ($result === 5) { echo "<h4>En voilà un.e de ninja ! Bravo !</h4>" . "<img src=" . '"' . 'https://i.pinimg.com/originals/e8/84/99/e884990a7863c90811e37b275cae3f0c.gif' . '"' . '>'; }
                 ?>
 
-                <a href="quiz.php" class="d-block">Refaire le Quiz</a> 
+                <a href="quiz.php" class="d-block p-4 link-secondary">Refaire le Quiz</a> 
 
                 </div>
 
