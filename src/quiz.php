@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="UTF-8" lang="FR">
-	
+	<!-- HTML code inspired by WebDevTricks.com -->
 	<title>Naruto Quiz</title>
 
     <!-- BOOTSTRAP CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- CUSTOM CSS -->
-	<link rel="stylesheet" type="text/css" href="public/style.css" />
 </head>
 
 <body class="px-5 mx-2">
@@ -18,7 +16,7 @@
                 <li class="list-group-item">          
                     <h3>Lequel de ces personnages ne fait pas partie de l'Akatsuki ?</h3> 
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" name="question-1-answers" id="question-1-answers-A" value="A">
+                        <input type="radio" class="form-check-input" name="question-1-answers" id="question-1-answers-A" value="A" checked>
                         <label class="form-check-label" for="question-1-answers-A">A - Uchiha Itachi </label>
                     </div>
                     <div class="form-check">
@@ -38,7 +36,7 @@
                 <li class="list-group-item">
                     <h3>De quel village est originaire Zabuza ?</h3>   
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" name="question-2-answers" id="question-2-answers-A" value="A">
+                        <input type="radio" class="form-check-input" name="question-2-answers" id="question-2-answers-A" value="A" checked>
                         <label class="form-check-label" for="question-2-answers-A">A - Konoha no Kuni</label>
                     </div>
                     
@@ -61,7 +59,7 @@
                 <li class="list-group-item">
                     <h3>A quelle équipe appartenait Akimichi Chôji ?</h3>
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" name="question-3-answers" id="question-3-answers-A" value="A">
+                        <input type="radio" class="form-check-input" name="question-3-answers" id="question-3-answers-A" value="A" checked>
                         <label class="form-check-label" for="question-3-answers-A">A - 7</label>
                     </div>
                     <div class="form-check">
@@ -81,16 +79,16 @@
                 <li class="list-group-item">
                     <h3>Quel personnage utilise la technique appelée "les paumes jumelles des lions agiles" ?</h3>
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" name="question-4-answers" id="question-4-answers-A" value="A">
+                        <input type="radio" class="form-check-input" name="question-4-answers" id="question-4-answers-A" value="A" checked>
                         <label class="form-check-label" for="question-4-answers-A">A - Rock Lee</label>
                     </div>
                     <div class="form-check">
                         <input type="radio" class="form-check-input" name="question-4-answers" id="question-4-answers-B" value="B">
-                        <label class="form-check-label" for="question-4-answers-B">B - Inuzuka Kiba</label>
+                        <label class="form-check-label" for="question-4-answers-B">B - Hyuga Hinata</label>
                     </div>
                     <div class="form-check">
                         <input type="radio" class="form-check-input" name="question-4-answers" id="question-4-answers-C" value="C">
-                        <label class="form-check-label" for="question-4-answers-C">C - Hyuga Hinata</label>
+                        <label class="form-check-label" for="question-4-answers-C">C - Inuzuka Kiba</label>
                     </div>
                     <div class="form-check">
                         <input type="radio" class="form-check-input" name="question-4-answers" id="question-4-answers-D" value="D">
@@ -101,7 +99,7 @@
                 <li class="list-group-item">
                     <h3>Quel est le nom des techniques utilisant l'élément du Bois ?</h3>
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" name="question-5-answers" id="question-5-answers-A" value="A">
+                        <input type="radio" class="form-check-input" name="question-5-answers" id="question-5-answers-A" value="A" checked>
                         <label class="form-check-label" for="question-5-answers-A">A - Raiton</label>
                     </div>
                     <div class="form-check">
@@ -118,7 +116,7 @@
                     </div>
                 </li>
             </ul>
-            <input type="submit" value="submit" class="list-group-item mx-auto my-3">
+            <input type="submit" value="Envoyer" class="list-group-item mx-auto my-3">
 		</form>
 	</div>
 
